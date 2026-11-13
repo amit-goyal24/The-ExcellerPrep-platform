@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ExcellerPrep — Presentation Slides</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 12px 24px;
+      background: #1e293b;
+      border-bottom: 1px solid #334155;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+    .badge {
+      background: #2563eb;
+      color: white;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 11px;
+    }
+    .slide-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+      max-width: 960px;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 0.25s ease;
+    }
+    .slide.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.99); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .speaker-pill {
+      display: inline-block;
+      background: rgba(37, 99, 235, 0.2);
+      border: 1px solid rgba(37, 99, 235, 0.5);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      color: #f8fafc;
+      margin-bottom: 6px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #93c5fd;
+      margin-bottom: 18px;
+    }
+    p.subtitle {
+      font-size: 15px;
+      color: #94a3b8;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 16px;
+    }
+    .card {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      padding: 16px 20px;
+    }
+    .card h3 {
+      font-size: 15px;
+      color: #60a5fa;
+      margin-bottom: 8px;
+    }
+    .card ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+    .speaking-script {
+      margin-top: 20px;
+      background: rgba(245, 158, 11, 0.1);
+      border-left: 4px solid #f59e0b;
+      padding: 10px 14px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #fde68a;
+    }
+    footer {
+      padding: 14px 24px;
+      background: #1e293b;
+      border-top: 1px solid #334155;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-btn {
+      background: #334155;
+      color: white;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .nav-btn:hover { background: #475569; }
+    .nav-btn.primary { background: #2563eb; }
+    .nav-btn.primary:hover { background: #1d4ed8; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <span class="badge">Major Project Review</span>
+      <strong style="color:#f8fafc;">ExcellerPrep — Presentation Slides</strong>
+    </div>
+    <div style="color:#94a3b8; font-size:12px;">
+      Use <strong>Left / Right Arrow Keys</strong> or Buttons to navigate
+    </div>
+  </header>
+
+  <div class="slide-container">
+
+    <!-- Slide 1: Title -->
+    <div class="slide active">
+      <span class="speaker-pill">Slide 1 • Team Introduction</span>
+      <h1>ExcellerPrep</h1>
+      <h2>Capgemini 2027 Placement Preparation Platform</h2>
+      <p class="subtitle">
+        Major Project Progress Evaluation • Department of Computer Science & Engineering
+      </p>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Team Members (5 Roles)</h3>
+          <ul>
+            <li><strong>Member 1:</strong> Shell, Branding & Sidebar Navigation</li>
+            <li><strong>Member 2:</strong> Dashboard Welcome Hero & Readiness Ring</li>
+            <li><strong>Member 3:</strong> Dashboard Information Metric Cards</li>
+            <li><strong>Member 4:</strong> Communication Grammar MCQ Engine</li>
+            <li><strong>Member 5:</strong> Score Evaluation & About Documentation</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Core Platform Scope</h3>
+          <ul>
+            <li><strong>3 Core Pages:</strong> Dashboard, Communication, About</li>
+            <li><strong>Authentic Theme:</strong> ExcellerPrep blue/white design</li>
+            <li><strong>Zero Backend Bloat:</strong> 100% frontend focus</li>
+            <li><strong>Interactive:</strong> 5 Grammar MCQs with instant scoring</li>
+          </ul>
+        </div>
+      </div>
+      <div class="speaking-script">
+        <strong>Member 1 says:</strong> "Good morning respected evaluators. Today, our 5-member team presents our Major Project, 'ExcellerPrep'..."
+      </div>
+    </div>
+
+    <!-- Slide 2: Objectives & Scope -->
+    <div class="slide">
+      <span class="speaker-pill">Slide 2 • Objectives & Architecture</span>
+      <h1>Project Objectives & Core Modules</h1>
+      <h2>Simplicity and working frontend over complex backend</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Core Modules Implemented</h3>
+          <ul>
+            <li><strong>1. Dashboard:</strong> Hero banner, 78% readiness ring, 4 stat cards, quick navigation.</li>
+            <li><strong>2. Communication:</strong> 5 placement grammar MCQs, instant validation, score banner.</li>
+            <li><strong>3. About Project:</strong> Academic objectives, tech stack, and 5-member work distribution.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Advanced Features Roadmap</h3>
+          <ul>
+            <li>Modular architecture ready for Code Execution workers.</li>
+            <li>Design system ready for AI Coaching integration.</li>
+            <li>Pre-configured for full staged Mock Exam blueprints.</li>
+            <li>Extensible for Cognitive Puzzles and Notes sync.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="speaking-script">
+        <strong>Member 1 says:</strong> "To ensure high reliability, modularity, and clean frontend design, our platform focuses on high-impact assessment components with zero server latency..."
+      </div>
+    </div>
+
+    <!-- Slide 3: 5 Member Work Distribution -->
+    <div class="slide">
+      <span class="speaker-pill">Slide 3 • Collaborative Division Matrix</span>
+      <h1>5-Member Work Distribution</h1>
+      <h2>Every member has a dedicated, easy-to-explain frontend component</h2>
+      <div class="card" style="margin-top:10px;">
+        <table style="width:100%; text-align:left; font-size:13px; color:#cbd5e1; border-collapse:collapse;">
+          <tr style="border-bottom:1px solid #334155; color:#60a5fa;">
+            <th style="padding:8px;">Member</th>
+            <th style="padding:8px;">Designated Responsibility</th>
+            <th style="padding:8px;">Key Files & Deliverables</th>
+          </tr>
+          <tr style="border-bottom:1px solid #1e293b;">
+            <td style="padding:8px;"><strong>Member 1</strong></td>
+            <td>App Shell & Sidebar Navigation</td>
+            <td><code>layout.tsx</code>, Sidebar links, branding mark, cohort badge</td>
+          </tr>
+          <tr style="border-bottom:1px solid #1e293b;">
+            <td style="padding:8px;"><strong>Member 2</strong></td>
+            <td>Dashboard Hero & Welcome Section</td>
+            <td><code>page.tsx</code> hero banner, 78% readiness progress ring</td>
+          </tr>
+          <tr style="border-bottom:1px solid #1e293b;">
+            <td style="padding:8px;"><strong>Member 3</strong></td>
+            <td>Dashboard Metric Information Cards</td>
+            <td><code>page.tsx</code> 4 stat cards, quick action navigation links</td>
+          </tr>
+          <tr style="border-bottom:1px solid #1e293b;">
+            <td style="padding:8px;"><strong>Member 4</strong></td>
+            <td>Communication Grammar MCQ Engine</td>
+            <td><code>communication/page.tsx</code> 5 questions, 4-option cards</td>
+          </tr>
+          <tr>
+            <td style="padding:8px;"><strong>Member 5</strong></td>
+            <td>Scoring Logic & About Page</td>
+            <td>Score banner, correct/wrong badges, <code>about/page.tsx</code></td>
+          </tr>
+        </table>
+      </div>
+      <div class="speaking-script">
+        <strong>Member 1 says:</strong> "Rather than creating unnecessary dummy pages, we divided the UI components, page sections, and interactive state cleanly among all 5 members."
+      </div>
+    </div>
+
+    <!-- Slide 4: Member 1 & 2 -->
+    <div class="slide">
+      <span class="speaker-pill">Slide 4 • Shell & Dashboard Hero</span>
+      <h1>App Shell & Dashboard Hero</h1>
+      <h2>Presenters: Member 1 & Member 2</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Member 1: Shell & Navigation</h3>
+          <ul>
+            <li>ExcellerPrep authentic blue/white theme.</li>
+            <li>Brand mark with layer icon & 'YOUR NEXT CHAPTER'.</li>
+            <li>Cohort pill (Capgemini Exceller Class of 2027).</li>
+            <li>Clean sidebar containing strictly 3 active routes.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Member 2: Welcome Hero & Readiness</h3>
+          <ul>
+            <li>Blue gradient welcome hero with live Capgemini tag.</li>
+            <li>Conic-gradient visual Readiness Ring (78/100).</li>
+            <li>Assessment Ready benchmark indicator.</li>
+            <li>Direct CTA button: "Start Communication Practice".</li>
+          </ul>
+        </div>
+      </div>
+      <div class="speaking-script">
+        <strong>Member 2 says:</strong> "I developed the dashboard hero section and the circular readiness score ring, which visualizes the student's preparation benchmark..."
+      </div>
+    </div>
+
+    <!-- Slide 5: Member 3 -->
+    <div class="slide">
+      <span class="speaker-pill">Slide 5 • Dashboard Information Metrics</span>
+      <h1>Dashboard Information Metric Cards</h1>
+      <h2>Presenter: Member 3</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>4 Core Information Cards</h3>
+          <ul>
+            <li><strong>Communication Mastery:</strong> 5 MCQs active.</li>
+            <li><strong>Readiness Benchmark:</strong> 78% (Threshold: 70%).</li>
+            <li><strong>Practice Streak:</strong> 5 Days of consistent study.</li>
+            <li><strong>Placement Readiness:</strong> Capgemini Exceller aligned.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Quick Navigation Panel</h3>
+          <ul>
+            <li>Two interactive action panels for fast navigation.</li>
+            <li>Direct jump to Communication Grammar assessment.</li>
+            <li>Direct jump to About Project and team details.</li>
+            <li>Responsive CSS grid adapting to mobile/tablet.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="speaking-script">
+        <strong>Member 3 says:</strong> "I implemented the 4 dashboard metric cards and the quick action links, giving students immediate visibility into their progress..."
+      </div>
+    </div>
+
+    <!-- Slide 6: Member 4 -->
+    <div class="slide">
+      <span class="speaker-pill">Slide 6 • Communication Grammar MCQ Module</span>
+      <h1>Communication Grammar Module</h1>
+      <h2>Presenter: Member 4</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Grammar MCQ Engine</h3>
+          <ul>
+            <li>Strictly focused on the Capgemini Verbal Grammar round.</li>
+            <li>5 high-impact questions: Subject-Verb, Tenses, Voice, Idioms.</li>
+            <li>4 options per question with option letters (A, B, C, D).</li>
+            <li>Radio input selection with instant active highlight.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Question Topics Covered</h3>
+          <ul>
+            <li><strong>Q1:</strong> Subject-Verb Agreement ('Each' singular rule).</li>
+            <li><strong>Q2:</strong> Professional Workplace Sentence Phrasing.</li>
+            <li><strong>Q3:</strong> Third Conditional Unreal Past Tenses.</li>
+            <li><strong>Q4:</strong> Prepositional Collocations ('Comply with').</li>
+            <li><strong>Q5:</strong> Active vs Passive Voice in engineering.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="speaking-script">
+        <strong>Member 4 says:</strong> "I built the communication grammar assessment page, authoring the 5 questions and handling the radio selection state across all options..."
+      </div>
+    </div>
+
+    <!-- Slide 7: Member 5 -->
+    <div class="slide">
+      <span class="speaker-pill">Slide 7 • Scoring Algorithm & About Page</span>
+      <h1>Evaluation Engine & About Project</h1>
+      <h2>Presenter: Member 5</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Scoring & Visual Validation</h3>
+          <ul>
+            <li>Submit button calculating candidate score in real time.</li>
+            <li>Visual feedback: Green for correct, Red for incorrect.</li>
+            <li>Score banner displaying total score and percentage.</li>
+            <li>Explanation callout box explaining the grammar rule.</li>
+            <li>Retake button allowing instant practice repetition.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>About Project Page (/about)</h3>
+          <ul>
+            <li>Comprehensive project introduction and rationale.</li>
+            <li>3 core academic objectives.</li>
+            <li>Technology stack breakdown.</li>
+            <li>5-Member work distribution table.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="speaking-script">
+        <strong>Member 5 says:</strong> "I developed the quiz evaluation logic, score calculation, correct/incorrect feedback badges, and the complete About Project documentation page..."
+      </div>
+    </div>
+
+    <!-- Slide 8: Tech Stack & Verification -->
+    <div class="slide">
+      <span class="speaker-pill">Slide 8 • Technology & Quality</span>
+      <h1>Technology Stack & Verification</h1>
+      <h2>Production-Grade Modern Frontend</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Technologies Used</h3>
+          <ul>
+            <li><strong>Next.js 16.4:</strong> App Router with static prerendering.</li>
+            <li><strong>React 19 & TypeScript:</strong> Strict typing and state management.</li>
+            <li><strong>Tailwind CSS 4:</strong> Reusing authentic ExcellerPrep styling.</li>
+            <li><strong>Lucide React:</strong> Clean vector icons.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Verification Status</h3>
+          <ul>
+            <li>Compiled in <strong>1.25 seconds</strong> with zero build errors.</li>
+            <li>All 3 routes verified returning <strong>HTTP 200 OK</strong>.</li>
+            <li>Zero console warnings or failed network requests.</li>
+            <li>Completely isolated in <code>Presentation-Version</code> folder.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="speaking-script">
+        <strong>Member 1 says:</strong> "Our simplified version compiled in 1.25 seconds and passed all route checks, proving that our architecture is solid, clean, and bug-free..."
+      </div>
+    </div>
+
+    <!-- Slide 9: Future Scope -->
+    <div class="slide">
+      <span class="speaker-pill">Slide 9 • Future Scope (Remaining 80%)</span>
+      <h1>Roadmap for Remaining 80%</h1>
+      <h2>Clear milestones for subsequent project reviews</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Phase 2 & 3 (40% & 60% Reviews)</h3>
+          <ul>
+            <li><strong>Phase 2 (40%):</strong> Integrate student authentication and connect cloud database (PostgreSQL/Supabase).</li>
+            <li><strong>Phase 3 (60%):</strong> Coding Practice module with sandboxed browser Python code execution.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Phase 4 & 5 (80% & Final Review)</h3>
+          <ul>
+            <li><strong>Phase 4 (80%):</strong> AI Coding Coach powered by Groq LLM API for approach reasoning.</li>
+            <li><strong>Phase 5 (100%):</strong> Full mock assessment papers with proctoring deterrence and deployment.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="speaking-script">
+        <strong>Member 5 concludes:</strong> "With our core frontend foundation verified, we have an engineering plan for subsequent reviews and deployment. Thank you!"
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <button class="nav-btn" id="prevBtn" onclick="prevSlide()">← Previous</button>
+    <span id="slideCounter" style="color:#94a3b8; font-size:13px; font-weight:600;">Slide 1 of 9</span>
+    <button class="nav-btn primary" id="nextBtn" onclick="nextSlide()">Next →</button>
+  </footer>
+
+  <script>
+    let current = 0;
+    const slides = document.querySelectorAll('.slide');
+    const counter = document.getElementById('slideCounter');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    function update() {
+      slides.forEach((s, idx) => s.classList.toggle('active', idx === current));
+      counter.textContent = `Slide ${current + 1} of ${slides.length}`;
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current === slides.length - 1;
+    }
+
+    function nextSlide() {
+      if (current < slides.length - 1) {
+        current++;
+        update();
+      }
+    }
+
+    function prevSlide() {
+      if (current > 0) {
+        current--;
+        update();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+      else if (e.key === 'ArrowLeft') prevSlide();
+    });
+
+    update();
+  </script>
+</body>
+</html>
